@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayDate()
+{
+
+var d = new Date();
+d.setDate(d.getDate()-1);
+var curr_date = d.getDate();
+var curr_month = d.getMonth() + 1;
+var curr_year = d.getFullYear();
+var yesterday = curr_year + "-" + curr_month + "-" + curr_date ;
+
+document.write(yesterday);
+
+}
+</script>
+</head>
+<body>
+
+
+<p id="demo">Click Button to Display Yesterday Date</p>
+
+<button type="button" onclick="displayDate()">Display Date</button>
+
+</body>
+</html> 
