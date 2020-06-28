@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Hour14</h2>
+
+<p id="Hour14"></p>
+
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+var myFather = new Person("Roberto", "Vazquez", 55, "blue");
+var myMother = new Person("Juana", "Vazquez", 51, "green");
+
+document.getElementById("Hour14").innerHTML =
+"My Pops is " + myFather.age + ". My momma is " + myMother.age; 
+</script>
+
+</body>
+</html>
